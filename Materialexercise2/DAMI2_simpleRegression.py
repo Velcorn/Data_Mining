@@ -12,7 +12,8 @@ plt.figure(1)
 plt.scatter(x, y)
 plt.xlabel('Hours of study')
 plt.ylabel('Test scores')
-plt.show()
+# plt.show()
+plt.close()
 
 
 def estimate_coef(x, y): 
@@ -43,6 +44,8 @@ def plot_regression_line(x, y, b):
 
 	# plotting the regression line 
 	plt.plot(x, y_pred, color="k")
+	plt.xlabel('Hours of study')
+	plt.ylabel('Test scores')
 
 	# putting labels 
 	plt.xlabel('x') 

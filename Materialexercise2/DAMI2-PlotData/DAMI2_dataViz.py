@@ -11,10 +11,8 @@ labels = "Grunge", "Hip Hop", "Metal", "Schlager", "Rock"
 sizes = [ap/sum(amount_people) for ap in amount_people]
 fig, ax = plt.subplots()
 ax.pie(sizes, labels=labels, autopct='%1.1f%%')
-# plt.show()
-plt.close()
 
-# Plots for lecture grades
+# Plot for lecture grades
 grades = []
 with open("Grades_lecture1.dat", "r") as f:
     for line in f:
